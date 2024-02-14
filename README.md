@@ -1,16 +1,7 @@
-<div id="header" align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="200"/>
-</div>
-</p>
 
-<div id="badges" align="center">
-  <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=blue" alt="VK Badge"/>
-
-</div>
-
+# Project Yolo V3
 <p align="center">
-   <img src="https://media.giphy.com/media/VYPDYUBR9bGEIYtz5s/giphy.gif?cid=ecf05e47pdggmnkmdmfzgcp00hq8cg5nmxrnb2w5m8e8c36t&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="100">
+   <img src="https://media.giphy.com/media/VYPDYUBR9bGEIYtz5s/giphy.gif?cid=ecf05e47pdggmnkmdmfzgcp00hq8cg5nmxrnb2w5m8e8c36t&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="300">
 </p>
 
 ## About (Eng)
