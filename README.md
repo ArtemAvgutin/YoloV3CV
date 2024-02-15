@@ -23,7 +23,7 @@ Methods:
 * Object detection layers output predictions for object detection and classification.
 *  Upsampling blocks that combine layers.
 
-## About(Rus)
+## About (Rus)
 
 Для создания модели YOLOv3 (You Only Look Once Version 3) используются различные инструменты и технологии. Ключевые компоненты включают в себя:
 * Реализацию на Python, используя фреймворк глубокого обучения TensorFlow.
