@@ -5,8 +5,10 @@
 </p>
 
 ## About (Eng)
-
-
+* Target:
+Create a neural network to detect objects in an image. This is a training project for working with computer vision and tensorflow libraries.
+* Result:
+A neural network was created that was capable of identifying 80 classes in an image with good accuracy (~85%) and working quite quickly.
 
 ## About (Rus)
 * Цель:
@@ -14,11 +16,13 @@
 * Результат:
 Была создана нейронная сеть, способная определять 80 классов на изображении с хорошей точностью (~ 85%) и работать достаточно быстро.
 
-Пример работы:
+## Пример работы/Example of work
+Входное изображение/Input image:
+![ML photo](https://github.com/InfinityBlazze/YoloV3CV/assets/131138862/1d175c38-92e4-4561-8719-96d558a5bba9)
 
-Входное изображение:
+Обработанное изображение/Output image:
+![image](https://github.com/InfinityBlazze/YoloV3CV/assets/131138862/68e92188-53e1-4587-beb8-37539a55ff56)
 
-Обработанное изображение:
 
 YOLO – это передовая сеть для распознавания объектов (object detection)
 * YOLO может обнаруживать сразу несколько объектов, предсказывать классы и идентифицировать объекты на изображении.
@@ -37,12 +41,33 @@ YOLO – это передовая сеть для распознавания о
 
 Дополнительная информация:
 * На вход сети подаются изображения формы (n, 416, 416, 3), где n-кол-во изображений,  416- ширина и высота изображений, 3 -  кол-во каналов цветов (rgb). Размер изображений можно менять, но он должен делиться на 32 без остатка (608, 1024 и т.д)
-* Пример работы якорей для предсказания:
+* Images of the form (n, 416, 416, 3) are supplied to the network input, where n is the number of images, 416 is the width and height of the images, 3 is the number of color channels (rgb). The size of the images can be changed, but it must be divisible by 32 without a remainder (608, 1024, etc.)
+* Пример работы якорей для предсказания
+* Example of how anchors work for prediction:
 
 ![image](https://github.com/InfinityBlazze/YoloV3CV/assets/131138862/21d56247-c8f2-4940-99ed-b4f7f6874f71)
 
-* Далее сеть проходит по изображению и создает по 3 рамки на каждый объект. Испуользуя функцию nonMaximumSuppression мы отбрасываем рамки с наименьшим процентов вероятности и выводим рамку с объектом, где наибольшая увернность (соотношение каждой рамки).
+* Далее сеть проходит по изображению и создает по 3 рамки на каждый объект. Испуользуя функцию nonMaximumSuppression мы отбрасываем рамки с наименьшим процентом вероятности.
+* Next, the network passes through the image and creates 3 frames for each object. Using the nonMaximumSuppression function, we discard frames with the lowest percentage of probability.
 
 ![image](https://github.com/InfinityBlazze/YoloV3CV/assets/131138862/2069f460-e1c0-4ddc-9a39-d5f1a35f051a)
     
 * На выходе мы получаем обработанное изображение с рамкой, уверенностью (в %) и названием объекта.
+* At the output we get a processed image with a frame, confidence (in%) and the name of the object.
+
+# Some info about project
+  YOLO is an advanced network for object detection
+* YOLO can detect multiple objects at once, predict classes and identify objects in an image.
+* In YOLO, object recognition was implemented as a regression problem to separate bounding boxes with associated probabilities of membership in different classes.
+* Since YOLO only looks at an image once, a floating window is the wrong approach. Instead, the entire image is divided using a grid into cells of size 𝑆∗𝑆. After that, each cell is responsible for predicting several things
+* YOLO uses anchor boxes to predict containing boxes.
+Anchors were calculated on the COCO dataset using k-means clustering. In total, the network recognizes 80 object classes
+* YOLO uses 53 CNN layers (darknet-53) and is connected to another 53 layers. A total of 106 layers, where 3 layers are responsible for detection (82,94,106)
+*Version 3 includes several important elements. Namely: residual blocks, skip connections, and up-sampling. Each convolutional layer (CNN) is followed by a batch normalization layer, Leaky ReLu (relu activation function).
+
+To create a YOLOv3 (You Only Look Once Version 3) model, key components include:
+* Implementation in Python using the TensorFlow deep learning framework.
+* Implementation of the algorithm for anchor frames and suppression of non-maxima.
+* We take ready-made DarkNet weights from the original trained model.
+* Feeding the image to the input and output of the processed image.
+
