@@ -16,11 +16,11 @@ A neural network was created that was capable of identifying 80 classes in an im
 * Результат:
 Была создана нейронная сеть, способная определять 80 классов на изображении с хорошей точностью (~ 85%) и работать достаточно быстро.
 
-## Пример работы/Example of work
-Входное изображение/Input image:
+## Пример работы / Example of work
+Входное изображение / Input image:
 ![ML photo](https://github.com/InfinityBlazze/YoloV3CV/assets/131138862/1d175c38-92e4-4561-8719-96d558a5bba9)
 
-Обработанное изображение/Output image:
+Обработанное изображение / Output image:
 ![image](https://github.com/InfinityBlazze/YoloV3CV/assets/131138862/68e92188-53e1-4587-beb8-37539a55ff56)
 
 
