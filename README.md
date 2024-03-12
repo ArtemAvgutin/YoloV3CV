@@ -9,12 +9,16 @@
 Create a neural network to detect objects in an image. This is a training project for working with computer vision and tensorflow libraries.
 * Result:
 A neural network was created that was capable of identifying 80 classes in an image with good accuracy (~85%) and working quite quickly.
+* Technology stack:
+cv2, numpy, tensorflow, keras
 
 ## About (Rus)
 * Цель:
 Создать нейронную сеть для детектирования объектов на изображении. Это тренировочный проект для работы с компьютерным зрением и библиотеками tensorflow.
 * Результат:
 Была создана нейронная сеть, способная определять 80 классов на изображении с хорошей точностью (~ 85%) и работать достаточно быстро.
+* Стек технологий:
+cv2, numpy, tensorflow, keras
 
 ## Пример работы / Example of work
 Входное изображение / Input image:
